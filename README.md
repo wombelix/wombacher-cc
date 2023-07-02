@@ -6,7 +6,8 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Website wombacher.cc
 
-[![REUSE status](https://api.reuse.software/badge/codeberg.org/wombelix/wombacher-cc)](https://api.reuse.software/info/codeberg.org/wombelix/wombacher-cc)
+[![REUSE status](https://api.reuse.software/badge/codeberg.org/wombelix/wombacher-cc)](https://api.reuse.software/info/codeberg.org/wombelix/wombacher-cc) 
+[![builds.sr.ht status](https://builds.sr.ht/~wombelix/wombacher-cc.svg)](https://builds.sr.ht/~wombelix/wombacher-cc?)
 
 # License
 
