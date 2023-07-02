@@ -12,4 +12,4 @@ tasks:
       export LFTP_PASSWORD=${SECRET_PASSWORD}
       set -x
       cd wombacher-cc
-      lftp --env-password sftp://${SECRET_USER}@${SECRET_SERVER} -e "mirror --exclude .git/ --exclude-glob .* --delete --delete-excluded -v -R . . ; exit"
+      lftp --env-password sftp://${SECRET_USER}@${SECRET_SERVER} -e "set sftp:auto-confirm yes; mirror --exclude .git/ --exclude-glob .* --delete --delete-excluded -v -R . . ; exit"
