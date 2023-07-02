@@ -11,11 +11,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Source
 
-[git.sr.ht/~wombelix/wombacher-cc](https://git.sr.ht/~wombelix/wombacher-cc)
-
-Mirror:
-
-- [codeberg.org/wombelix/wombacher-cc](https://codeberg.org/wombelix/wombacher-cc)
+The code and all license related information is available at [git.sr.ht/~wombelix/wombacher-cc](https://git.sr.ht/~wombelix/wombacher-cc) with a mirror at [codeberg.org/wombelix/wombacher-cc](https://codeberg.org/wombelix/wombacher-cc).
 
 # License
 
