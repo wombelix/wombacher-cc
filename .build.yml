@@ -7,9 +7,9 @@ secrets:
   - e3c3c598-3588-418f-83dd-42ed34ade77a
 tasks:
   - deploy: |
-    set +x
-    source ~/.secret
-    export LFTP_PASSWORD=${SECRET_PASSWORD}
-    set -x
-    cd wombacher-cc
-    lftp --env-password sftp://${SECRET_USER}@${SECRET_SERVER} -e "mirror --exclude .git/ --exclude-glob .* --delete --delete-excluded -v -R . . ; exit"
+      set +x
+      source ~/.secret
+      export LFTP_PASSWORD=${SECRET_PASSWORD}
+      set -x
+      cd wombacher-cc
+      lftp --env-password sftp://${SECRET_USER}@${SECRET_SERVER} -e "mirror --exclude .git/ --exclude-glob .* --delete --delete-excluded -v -R . . ; exit"
