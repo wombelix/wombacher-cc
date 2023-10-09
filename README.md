@@ -11,7 +11,20 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Source
 
-The code and all license related information is available at [git.sr.ht/~wombelix/wombacher-cc](https://git.sr.ht/~wombelix/wombacher-cc) with a mirror at [codeberg.org/wombelix/wombacher-cc](https://codeberg.org/wombelix/wombacher-cc).
+The primary location is: https://git.sr.ht/~wombelix/wombacher-cc
+
+Mirrors of the repository are available on 
+[Codeberg](https://codeberg.org/wombelix/wombacher-cc), 
+[Gitlab](https://gitlab.com/wombelix/wombacher-cc) and 
+[Github](https://github.com/wombelix/wombacher-cc).
+
+# Contribute
+
+Don't hesitate to provide Feedback, open an Issue or create an Pull / Merge Request.
+
+Just pick the workflow or platform you prefer and are most comfortable with.
+
+Feedback, Bug Reports or Patches via [Email](https://dominik.wombacher.cc/pages/contact.html) are also always welcome.
 
 # License
 
