@@ -4,6 +4,7 @@
 
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
+    Header set Content-Type "application/octet-stream"
 </IfModule>
 
 <FilesMatch "^[a-z2-7]{32,}$">
