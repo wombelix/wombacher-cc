@@ -9,6 +9,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 <!-- markdownlint-disable MD013 -->
 [![REUSE status](https://api.reuse.software/badge/github.com/wombelix/wombacher-cc)](https://api.reuse.software/info/github.com/wombelix/wombacher-cc)
 [![Mirror](https://github.com/wombelix/wombacher-cc/actions/workflows/mirror.yml/badge.svg)](https://github.com/wombelix/wombacher-cc/actions/workflows/mirror.yml)
+[![Deploy](https://github.com/wombelix/wombacher-cc/actions/workflows/deploy.yml/badge.svg)](https://github.com/wombelix/wombacher-cc/actions/workflows/deploy.yml)
 <!-- markdownlint-enable MD013 -->
 
 ## Table of Contents
