@@ -17,11 +17,6 @@ permissions:
   id-token: write
   contents: read
 
-env:
-  AWS_REGION: eu-central-1
-  AWS_ACCOUNT_ID: '992382418145'
-  AWS_ROLE_NAME: GitHubOIDC-wombacher-cc-ResourceAccess
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -29,25 +24,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install lftp
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y lftp
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/${{ env.AWS_ROLE_NAME }}
-          aws-region: ${{ env.AWS_REGION }}
-
-      - name: Install params2env
-        uses: wombelix/params2env@main
-
-      - name: Load SFTP credentials from SSM
-        run: params2env read
+      - name: Load secrets from SSM
+        uses: wombelix/build-helper-scripts/.github/actions/load-ssm-secrets@main
 
       - name: Deploy to SFTP target
-        run: |
-          export LFTP_PASSWORD="$SFTP_PASSWORD"
-          lftp --env-password "sftp://${SFTP_USER}@${SFTP_SERVER}" \
-            -e "set sftp:auto-confirm yes; mirror --delete --ignore-time -v -R ./public . ; exit"
+        uses: wombelix/build-helper-scripts/.github/actions/sftp-deploy@main
+        with:
+          source: ./public
